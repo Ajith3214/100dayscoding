@@ -13,8 +13,6 @@ public class InsertNodeatnSLL {
     }
 
     private Node head;
-
-    // Insert at n-th position (1-indexed)
     public void insertAtPosition(int data, int position) {
         Node newNode = new Node(data);
 
@@ -34,12 +32,10 @@ public class InsertNodeatnSLL {
             current = current.next;
         }
 
-        // Insert the node
         newNode.next = current.next;
         current.next = newNode;
     }
 
-    // Print linked list
     public void printList() {
         Node temp = head;
         while (temp != null) {
@@ -64,4 +60,5 @@ public class InsertNodeatnSLL {
     }
 	
 }
+
 
