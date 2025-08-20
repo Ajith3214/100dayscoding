@@ -53,10 +53,10 @@ public class LinkedListCycleRemover {
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
 
-        // Create a cycle: 5 -> 3
         head.next.next.next.next.next = head.next.next;
 
         removeCycle(head); 
         printList(head);   
     }
 }
+
